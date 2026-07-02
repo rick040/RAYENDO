@@ -1,4 +1,9 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/daggast", "destination": "/daggast.html" },
+    { "source": "/ceremoniegast", "destination": "/ceremoniegast.html" },
+    { "source": "/avondgast", "destination": "/avondgast.html" }
+  ]
 }
