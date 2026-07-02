@@ -494,10 +494,13 @@ section.active { display:block; }
 ══════════════════════════════════════════════════════ */
 .loc-header {
   padding:10rem 5.5rem 4.5rem; text-align:center;
-  background:
-    radial-gradient(circle at 10% 0%, var(--blue-soft) 0, transparent 38%),
-    var(--cream);
-  border-bottom:1px solid var(--border); position:relative;
+  background:var(--yellow);
+  background-image:repeating-linear-gradient(0deg,var(--yellow-light) 0,var(--yellow-light) 20px,var(--yellow) 20px,var(--yellow) 52px);
+  border-bottom:1px solid rgba(28,22,16,.15); position:relative;
+}
+#locaties {
+  background:var(--yellow);
+  background-image:repeating-linear-gradient(0deg,var(--yellow-light) 0,var(--yellow-light) 20px,var(--yellow) 20px,var(--yellow) 52px);
 }
 .loc-header .eyebrow {
   font-family:var(--sans); font-size:.65rem; letter-spacing:.25em;
@@ -505,7 +508,7 @@ section.active { display:block; }
 }
 .loc-header h1 {
   font-family:var(--serif); font-style:normal; font-weight:600;
-  font-size:clamp(2.2rem,5vw,4rem); color:var(--ink);
+  font-size:clamp(2.2rem,5vw,4rem); color:var(--pink);
   letter-spacing:.12em; text-transform:uppercase; line-height:1;
 }
 .loc-grid { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--border); }
@@ -529,7 +532,7 @@ section.active { display:block; }
 .loc-type { font-family:var(--sans); font-size:.6rem; letter-spacing:.2em; text-transform:uppercase; color:var(--pink); margin-bottom:.65rem; }
 .loc-name {
   font-family:var(--serif); font-style:normal; font-weight:600;
-  font-size:clamp(1.5rem,2vw,2rem); color:var(--ink);
+  font-size:clamp(1.5rem,2vw,2rem); color:var(--pink);
   letter-spacing:.06em; text-transform:uppercase; line-height:1.15; margin-bottom:1rem;
 }
 .loc-intro { font-family:var(--serif); font-size:1.02rem; color:var(--ink-70); line-height:1.6; margin-bottom:1.5rem; }
@@ -567,10 +570,13 @@ section.active { display:block; }
 ══════════════════════════════════════════════════════ */
 .info-header {
   padding:10rem 5.5rem 4.5rem; text-align:center;
-  background:
-    radial-gradient(circle at 90% 0%, var(--yellow-soft) 0, transparent 40%),
-    var(--cream);
-  border-bottom:1px solid var(--border); position:relative;
+  background:var(--yellow);
+  background-image:repeating-linear-gradient(0deg,var(--yellow-light) 0,var(--yellow-light) 20px,var(--yellow) 20px,var(--yellow) 52px);
+  border-bottom:1px solid rgba(28,22,16,.15); position:relative;
+}
+#info {
+  background:var(--yellow);
+  background-image:repeating-linear-gradient(0deg,var(--yellow-light) 0,var(--yellow-light) 20px,var(--yellow) 20px,var(--yellow) 52px);
 }
 .info-header .eyebrow { font-family:var(--sans); font-size:.65rem; letter-spacing:.25em; text-transform:uppercase; color:var(--pink); display:block; margin-bottom:1rem; }
 .info-header h1 {
@@ -597,8 +603,22 @@ section.active { display:block; }
 }
 .info-cell p { font-family:var(--serif); font-size:1rem; color:var(--ink-70); line-height:1.75; }
 .info-bank {
-  margin-top:1rem; font-family:var(--sans); font-size:.78rem; letter-spacing:.04em;
+  margin-top:1rem; font-family:var(--serif); font-size:1rem; letter-spacing:.02em;
   color:var(--ink); line-height:1.6;
+}
+.shuttle-table { width:100%; border-collapse:collapse; margin-top:1rem; }
+.shuttle-table th {
+  font-family:var(--sans); font-size:.56rem; font-weight:500; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--ink-40); text-align:left;
+  padding:.5rem 0; border-bottom:1px solid var(--border);
+}
+.shuttle-table td {
+  font-family:var(--serif); font-size:.95rem; color:var(--ink-70);
+  padding:.6rem 0; border-bottom:1px solid var(--border);
+}
+.shuttle-table tr:last-child td { border-bottom:none; }
+.shuttle-table th:last-child, .shuttle-table td:last-child {
+  text-align:right; font-family:var(--sans); font-size:.8rem; font-weight:500; color:var(--pink);
 }
 
 /* ══════════════════════════════════════════════════════
@@ -624,7 +644,7 @@ section.active { display:block; }
   font-size:clamp(2rem,3.5vw,3rem); color:var(--pink-dark);
   letter-spacing:.08em; text-transform:uppercase; line-height:1.15; margin-bottom:1.2rem;
 }
-.rsvp-left p { font-family:var(--serif); font-size:1.05rem; color:var(--ink-70); line-height:1.8; }
+.rsvp-left p { font-family:var(--serif); font-size:1.05rem; color:var(--pink); line-height:1.8; }
 .rsvp-left-meta { margin-top:2.5rem; padding-top:2rem; border-top:1px solid rgba(28,22,16,.15); }
 .rl-row { display:flex; justify-content:space-between; padding:.65rem 0; border-bottom:1px solid rgba(28,22,16,.08); }
 .rl-row span:first-child { font-family:var(--sans); font-size:.58rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-40); }
@@ -633,7 +653,7 @@ section.active { display:block; }
 .rsvp-right { background:var(--cream); padding:8rem 5rem; display:flex; flex-direction:column; justify-content:center; }
 .rsvp-right h3 {
   font-family:var(--serif); font-style:normal; font-weight:600;
-  font-size:1.5rem; color:var(--ink); margin-bottom:2.5rem;
+  font-size:1.5rem; color:var(--pink); margin-bottom:2.5rem;
   letter-spacing:.08em; text-transform:uppercase;
 }
 .field { margin-bottom:1.6rem; }
@@ -813,10 +833,6 @@ section.active { display:block; }
     <div class="hero-right">
       <div class="hero-chateau-wrap page-enter page-enter-d2">
         <img src="chateau.jpg" alt="Château Neercanne" class="hero-chateau-img">
-        <div class="hero-chateau-label">
-          <div class="card-venue">Château Neercanne</div>
-          <div class="card-address">Von Dopfflaan 10 · 6213 NG Maastricht</div>
-        </div>
       </div>
     </div>
     <div class="tristripe"></div>
@@ -871,12 +887,12 @@ section.active { display:block; }
       </div>
       <ul class="tl">
         <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">12:00</span><div class="tl-body"><div class="tl-title">Lunch</div><div class="tl-desc">Gezamenlijke lunch om de dag samen te beginnen.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Terras van Château Neercanne</span></div></li>
-        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">15:00</span><div class="tl-body"><div class="tl-title">Break</div><div class="tl-desc">Opfrissen thuis bij Hoeve Klinkenberg. De shuttle brengt je heen en weer. Check het schema bij Informatie.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Hoeve Klinkenberg</span></div></li>
-        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">16:00</span><div class="tl-body"><div class="tl-title">Borrel</div><div class="tl-desc">Welkomstborrel en ontvangst van de avondgasten.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Binnenplein Château Neercanne</span></div></li>
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">15:00</span><div class="tl-body"><div class="tl-title">Break</div><div class="tl-desc">Opfrissen thuis bij Hoeve Klinkenberg. De shuttle brengt je heen en weer. Check het schema bij het tabje Info.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Hoeve Klinkenberg</span></div></li>
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">16:00</span><div class="tl-body"><div class="tl-title">Borrel</div><div class="tl-desc">Welkomstborrel en ontvangst van de overige gasten.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Binnenplein Château Neercanne</span></div></li>
         <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">17:45</span><div class="tl-body"><div class="tl-title">Ceremonie</div><div class="tl-desc">Het ja-woord in de prachtige tuin.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Tuin van Château Neercanne</span></div></li>
-        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">18:45</span><div class="tl-body"><div class="tl-title">Samen proosten op de liefde en het leven!</div><div class="tl-desc">Hef het glas op het gelukkige bruidspaar.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Binnenplein Château Neercanne</span></div></li>
-        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">21:00</span><div class="tl-body"><div class="tl-title">Feest</div><div class="tl-desc">Dansen, lachen en vieren.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Verrassing</span></div></li>
-        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">00:00</span><div class="tl-body"><div class="tl-title">Afterparty</div><div class="tl-desc">Voor de echte feestgangers.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Verrassing</span></div></li>
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">18:45</span><div class="tl-body"><div class="tl-title">Toast en bites</div><div class="tl-desc">Samen proosten op de liefde en het leven!</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Binnenplein Château Neercanne</span></div></li>
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">21:00</span><div class="tl-body"><div class="tl-title">Feest</div><div class="tl-desc">Dansen, lachen en vieren.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Château Neercanne</span></div></li>
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">00:00</span><div class="tl-body"><div class="tl-title">Afterparty</div><div class="tl-desc">Voor de echte feestgangers, tot 02:00 uur.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Château Neercanne</span></div></li>
       </ul>
     </div>
     <div class="day-block reveal rd2">
@@ -894,7 +910,7 @@ section.active { display:block; }
         <div class="day-info"><h3>Maandag 7 September</h3><span>Tot ziens</span></div>
       </div>
       <ul class="tl">
-        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">10:00</span><div class="tl-body"><div class="tl-title">Uitchecken</div><div class="tl-desc">Aan alles komt een einde — om 10.00 uur mag je het huisje achter je laten. Tot de volgende keer!</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Hoeve Klinkenberg</span></div></li>
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">10:00</span><div class="tl-body"><div class="tl-title">Uitchecken</div><div class="tl-desc">Aan alles komt een einde — om 10.00 uur mag je het huisje achter je laten.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Hoeve Klinkenberg</span></div></li>
       </ul>
     </div>
   </div>
@@ -914,7 +930,7 @@ section.active { display:block; }
       <span class="loc-col-num">01</span>
       <div class="loc-type">Overnachting &mdash; hier slaap je</div>
       <div class="loc-name">Hoeve Klinkenberg</div>
-      <p class="loc-intro">Hier verblijf je het hele weekend. Je eigen huisje staat klaar vanaf vrijdag 15.00 uur; uitchecken is pas maandagochtend om 10.00 uur. Rustig settelen, overnachten en 's ochtends ontbijten — alles op één plek.</p>
+      <p class="loc-intro">Hier verblijf je het hele weekend. Je eigen huisje staat klaar vanaf vrijdag 15.00 uur; uitchecken is pas maandagochtend om 10.00 uur. Rustig settelen, de BBQ, overnachten en 's ochtends ontbijten — alles op één plek.</p>
       <ul class="loc-list">
         <li><span class="ll-label">Adres</span><span>Klinkenberg 1, 6231 BA Meerssen</span></li>
         <li><span class="ll-label">Kaart</span><span><a href="https://www.google.com/maps/search/?api=1&query=Hoeve+Klinkenberg+Klinkenberg+1+6231+BA+Meerssen" target="_blank" style="color:var(--pink);text-decoration:none;">Bekijk op Google Maps →</a></span></li>
@@ -973,7 +989,7 @@ section.active { display:block; }
       <span class="licon"><svg viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11"/><path d="M3 9h18M12 9v11M12 9c-2-4-7-4-7-1s5 1 7 1zM12 9c2-4 7-4 7-1s-5 1-7 1z"/></svg></span>
       <span class="cell-accent">Cadeau</span>
       <h3>Een kunstwerk</h3>
-      <p>Jullie aanwezigheid is ons grootste cadeau! Mocht je toch wat willen geven, dan is een bijdrage voor een kunstwerk ter herinnering aan de mooiste dag van ons leven een leuk idee.</p>
+      <p>Jullie aanwezigheid is ons grootste cadeau, maar ter herinnering aan de mooiste dag zouden wij graag een bijdrage voor een kunstwerk willen.</p>
       <div class="info-bank">Overmaken naar: R. Derijck en/of D.J. van Ierschot<br>NL98 KNAB 0514 2623 62<br>o.v.v. "vier het leven"</div>
     </div>
     <div class="info-cell reveal rd1">
@@ -982,13 +998,17 @@ section.active { display:block; }
       <span class="cell-accent">Shuttle</span>
       <h3>Busjesschema</h3>
       <p>Tussen Hoeve Klinkenberg en Château Neercanne rijdt een shuttlebus, zodat je heen en weer kunt om je op te frissen.</p>
-      <ul class="shuttle-list">
-        <li><span>Break — Neercanne → Klinkenberg</span><span>15:00</span></li>
-        <li><span>Break — Klinkenberg → Neercanne</span><span>16:00</span></li>
-        <li><span>Break — Klinkenberg → Neercanne</span><span>16:15</span></li>
-        <li><span>Avond — Neercanne → Klinkenberg</span><span>00:15</span></li>
-        <li><span>Avond — Neercanne → Klinkenberg</span><span>02:15</span></li>
-      </ul>
+      <table class="shuttle-table">
+        <thead><tr><th>Rit</th><th>Tijd</th></tr></thead>
+        <tbody>
+          <tr><td>Start — Klinkenberg → Neercanne</td><td>11:00</td></tr>
+          <tr><td>Break — Neercanne → Klinkenberg</td><td>15:00</td></tr>
+          <tr><td>Break — Klinkenberg → Neercanne</td><td>16:00</td></tr>
+          <tr><td>Break — Klinkenberg → Neercanne</td><td>16:15</td></tr>
+          <tr><td>Avond — Neercanne → Klinkenberg</td><td>00:15</td></tr>
+          <tr><td>Avond — Neercanne → Klinkenberg</td><td>02:15</td></tr>
+        </tbody>
+      </table>
     </div>
     <div class="info-cell reveal rd2">
       <span class="cell-num">— 06</span>
@@ -1019,6 +1039,8 @@ section.active { display:block; }
           <div class="rl-row"><span>Datum</span><span>4 – 6 September 2026</span></div>
           <div class="rl-row"><span>Locatie</span><span>Château Neercanne</span></div>
           <div class="rl-row"><span>Gasttype</span><span>Daggast</span></div>
+          <div class="rl-row"><span>Overnachting</span><span>Hoeve Klinkenberg</span></div>
+          <div class="rl-row"><span>RSVP vóór</span><span>1 augustus 2026</span></div>
         </div>
       </div>
       <div class="script-watermark">Ray & Do</div>
