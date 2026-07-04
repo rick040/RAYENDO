@@ -489,17 +489,6 @@ section.active { display:block; }
   padding:.2rem .65rem; border-radius:2px;
 }
 
-/* ─── PROGRAMMA ICON GRID (Zaterdag) ──────────────────────────── */
-.prog-grid { display:grid; grid-template-columns:1fr 1fr; gap:0 3.5rem; max-width:640px; margin:0 auto; }
-.prog-col { display:flex; flex-direction:column; }
-.prog-item { text-align:center; padding:2rem 0; border-bottom:1px solid rgba(240,48,110,.18); }
-.prog-col .prog-item:last-child { border-bottom:none; }
-.prog-icon { width:64px; height:64px; object-fit:contain; margin:0 auto .9rem; display:block; }
-.prog-label { display:block; font-family:var(--serif); font-weight:600; font-size:1.05rem; letter-spacing:.08em; text-transform:uppercase; color:var(--pink); margin-bottom:.3rem; }
-.prog-time { display:block; font-family:var(--sans); font-size:.8rem; font-weight:500; letter-spacing:.15em; color:var(--ink); margin-bottom:.3rem; }
-.prog-loc { display:block; font-family:var(--sans); font-size:.56rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-40); }
-@media(max-width:780px){ .prog-grid { grid-template-columns:1fr; max-width:100%; } }
-
 /* ══════════════════════════════════════════════════════
    LOCATIES
 ══════════════════════════════════════════════════════ */
@@ -588,7 +577,7 @@ section.active { display:block; }
 .info-header .eyebrow { font-family:var(--sans); font-size:.65rem; letter-spacing:.25em; text-transform:uppercase; color:var(--pink); display:block; margin-bottom:1rem; }
 .info-header h1 {
   font-family:var(--serif); font-style:normal; font-weight:600;
-  font-size:clamp(2.2rem,5vw,4rem); color:var(--ink);
+  font-size:clamp(2.2rem,5vw,4rem); color:var(--pink);
   letter-spacing:.12em; text-transform:uppercase; line-height:1;
 }
 .info-cells { display:grid; grid-template-columns:repeat(3,1fr); }
@@ -852,15 +841,11 @@ section.active { display:block; }
         <span class="day-num-big">05</span>
         <div class="day-info"><h3>Zaterdag 5 September</h3><span>De grote dag</span></div>
       </div>
-      <div class="prog-grid">
-        <div class="prog-col">
-          <div class="prog-item"><img src="icon-borrel.png" class="prog-icon" alt=""><span class="prog-label">Ontvangstborrel</span><span class="prog-time">16:00</span><span class="prog-loc">Binnenplein Château Neercanne</span></div>
-          <div class="prog-item"><img src="icon-toast.png" class="prog-icon" alt=""><span class="prog-label">Toast &amp; Bites</span><span class="prog-time">18:45</span><span class="prog-loc">Binnenplein Château Neercanne</span></div>
-        </div>
-        <div class="prog-col">
-          <div class="prog-item"><img src="icon-ceremonie.png" class="prog-icon" alt=""><span class="prog-label">Ceremonie</span><span class="prog-time">17:45</span><span class="prog-loc">Tuin van Château Neercanne</span></div>
-        </div>
-      </div>
+      <ul class="tl">
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">16:00</span><div class="tl-body"><div class="tl-title">Ontvangstborrel</div><div class="tl-desc">Welkom op Château Neercanne.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Binnenplein Château Neercanne</span></div></li>
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">17:45</span><div class="tl-body"><div class="tl-title">Ceremonie</div><div class="tl-desc">Het ja-woord in de prachtige tuin.</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Tuin van Château Neercanne</span></div></li>
+        <li class="tl-item"><div class="tl-dot"></div><span class="tl-time">18:45</span><div class="tl-body"><div class="tl-title">Toost en bites</div><div class="tl-desc">Samen proosten op de liefde en het leven!</div><span class="tl-loc"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.7-6-10a6 6 0 1 1 12 0c0 4.3-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg> Binnenplein Château Neercanne</span></div></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -892,7 +877,7 @@ section.active { display:block; }
 <!-- ══ INFO ══ -->
 <section id="info">
   <div class="info-header stripe-top">
-    <span class="eyebrow">Alles wat u moet weten</span>
+    <span class="eyebrow">Alles wat je moet weten</span>
     <h1>Informatie</h1>
   </div>
   <div class="info-cells">
@@ -953,7 +938,6 @@ section.active { display:block; }
         <div class="rsvp-left-meta">
           <div class="rl-row"><span>Datum</span><span>5 september 2026</span></div>
           <div class="rl-row"><span>Locatie</span><span>Château Neercanne</span></div>
-          <div class="rl-row"><span>Gasttype</span><span>Ceremoniegast</span></div>
           <div class="rl-row"><span>RSVP vóór</span><span>1 augustus 2026</span></div>
         </div>
       </div>
